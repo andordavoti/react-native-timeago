@@ -1,0 +1,20 @@
+{
+  "name": "rn-timeago",
+  "version": "0.0.1",
+  "description": "A simple React Native timeago Component.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andordavoti/rn-timeago"
+  },
+  "keywords": [
+    "react-native",
+    "timeago",
+    "react-native-component"
+  ],
+  "author": "Andor Davoti <andor.davoti@gmail.com> (https://andordavoti.com/)",
+  "license": "ISC"
+}
