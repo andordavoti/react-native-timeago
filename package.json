@@ -1,6 +1,6 @@
 {
   "name": "@andordavoti/react-native-timeago",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A simple React Native timeago Component.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
