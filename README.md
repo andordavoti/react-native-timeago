@@ -13,7 +13,7 @@ npm i @andordavoti/react-native-timeago
 Import the module:
 
 ```js
-import Timeago from '@andordavoti/react-native-timeago';
+import TimeAgo from '@andordavoti/react-native-timeago';
 ```
 
 ## Usage
@@ -22,10 +22,10 @@ Use it as a regular React Native Text component and pass it a Date. Other option
 
 ```js
 import React from 'react';
-import Timeago from '@andordavoti/react-native-timeago';
+import TimeAgo from '@andordavoti/react-native-timeago';
 
 const App: React.FC = () => {
-  return <Timeago dateTo={new Date(1536484369695)} />;
+  return <TimeAgo dateTo={new Date(1536484369695)} />;
 };
 
 export default App;
