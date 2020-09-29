@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "rn-timeago": ["./src/index"]
+      "@andordavoti/react-native-timeago": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

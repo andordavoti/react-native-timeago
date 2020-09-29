@@ -1,5 +1,5 @@
 {
-  "name": "rn-timeago",
+  "name": "@andordavoti/react-native-timeago",
   "version": "0.0.2",
   "description": "A simple React Native timeago Component.",
   "main": "lib/commonjs/index",
@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "rn-timeago.podspec",
+    "@andordavoti/react-native-timeago.podspec",
     "!lib/typescript/example",
     "!**/__tests__",
     "!**/__fixtures__",
@@ -34,13 +34,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/andordavoti/rn-timeago",
+  "repository": "https://github.com/andordavoti/react-native-timeago",
   "author": "Andor Davoti <andor.davoti@gmail.com> (https://andordavoti.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/andordavoti/rn-timeago/issues"
+    "url": "https://github.com/andordavoti/react-native-timeago/issues"
   },
-  "homepage": "https://github.com/andordavoti/rn-timeago#readme",
+  "homepage": "https://github.com/andordavoti/react-native-timeago#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.16.2",

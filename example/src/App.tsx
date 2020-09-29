@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import RNTimeago from 'rn-timeago';
+import RNTimeago from '@andordavoti/react-native-timeago';
 
 const App: React.FC = () => {
   console.log(new Date(1536484369695));

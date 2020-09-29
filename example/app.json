@@ -1,22 +1,16 @@
 {
-  "name": "rn-timeago-example",
+  "name": "@andordavoti/react-native-timeago-example",
   "displayName": "RnTimeago Example",
   "expo": {
-    "name": "rn-timeago-example",
-    "slug": "rn-timeago-example",
-    "description": "Example app for rn-timeago",
+    "name": "@andordavoti/react-native-timeago-example",
+    "slug": "@andordavoti/react-native-timeago-example",
+    "description": "Example app for @andordavoti/react-native-timeago",
     "privacy": "public",
     "version": "1.0.0",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "platforms": ["ios", "android", "web"],
     "ios": {
       "supportsTablet": true
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "assetBundlePatterns": ["**/*"]
   }
 }
