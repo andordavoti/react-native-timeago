@@ -1,6 +1,5 @@
 import React from 'react';
 import { StyleProp, Text, TextStyle } from 'react-native';
-import moment from 'moment';
 import formatDistance from 'date-fns/formatDistance';
 
 interface Props {
