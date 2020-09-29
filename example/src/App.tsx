@@ -5,11 +5,7 @@ import RNTimeago from 'rn-timeago';
 const App: React.FC = () => {
   return (
     <View style={styles.container}>
-      <RNTimeago
-        style={styles.text}
-        dateTo={new Date()}
-        dateFrom={new Date()}
-      />
+      <RNTimeago style={styles.text} dateTo={new Date(1536484369695)} />
     </View>
   );
 };
