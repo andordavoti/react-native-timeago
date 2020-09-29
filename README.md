@@ -2,6 +2,8 @@
 
 A simple React Native timeago Component using [date-fns](https://date-fns.org/).
 
+Supports iOS, Android and Web.
+
 ## Installation
 
 Run:
