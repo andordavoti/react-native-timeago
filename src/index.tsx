@@ -5,19 +5,19 @@ import formatDistance from 'date-fns/formatDistance';
 interface Props {
   dateTo: Date;
   dateFrom?: Date;
-  style?: StyleProp<TextStyle>;
   hideAgo?: boolean;
+  style?: StyleProp<TextStyle>;
 }
 
 const RNTimeAgo: React.FC<Props> = ({
   dateTo,
-  dateFrom,
-  style,
+  dateFrom = new Date(),
   hideAgo = false,
+  style,
 }) => {
   return (
     <Text {...{ style }}>
-      {formatDistance(dateTo, dateFrom || new Date(), {
+      {formatDistance(dateTo, dateFrom, {
         addSuffix: !hideAgo,
       })}
     </Text>
