@@ -1,21 +1,21 @@
-# rn-timeago
+# @andordavoti/react-native-timeago
 
 A simple React Native timeago Component.
 
 ## Installation
 
 ```sh
-npm install rn-timeago
+npm install @andordavoti/react-native-timeago
 ```
 
 ## Usage
 
 ```js
-import RnTimeago from "rn-timeago";
+import Timeago from '@andordavoti/react-native-timeago';
 
 // ...
 
-const result = await RnTimeago.multiply(3, 7);
+// const result = await RnTimeago.multiply(3, 7);
 ```
 
 ## Contributing

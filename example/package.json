@@ -1,6 +1,6 @@
 {
-  "name": "rn-timeago-example",
-  "description": "Example app for rn-timeago",
+  "name": "@andordavoti/react-native-timeago-example",
+  "description": "Example app for @andordavoti/react-native-timeago",
   "version": "0.0.1",
   "private": true,
   "main": "index",

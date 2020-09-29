@@ -1,26 +1,23 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
-import RNTimeago from 'rn-timeago';
+import TimeAgo from '@andordavoti/react-native-timeago';
 
-const App: React.FC = () => {
-  console.log(new Date(1536484369695));
-  return (
-    <View style={styles.container}>
-      <RNTimeago style={styles.text} dateTo={new Date(1536484369695)} />
-      <RNTimeago
-        style={styles.text}
-        dateFrom={new Date(2007, 0, 27)}
-        dateTo={new Date(2020, 0, 27)}
-      />
-      <RNTimeago
-        hideAgo
-        style={styles.text}
-        dateFrom={new Date(2007, 0, 27)}
-        dateTo={new Date(2020, 0, 27)}
-      />
-    </View>
-  );
-};
+const App: React.FC = () => (
+  <View style={styles.container}>
+    <TimeAgo style={styles.text} dateTo={new Date(1536484369695)} />
+    <TimeAgo
+      style={styles.text}
+      dateFrom={new Date(2007, 0, 27)}
+      dateTo={new Date(2020, 0, 27)}
+    />
+    <TimeAgo
+      hideAgo
+      style={styles.text}
+      dateFrom={new Date(2007, 0, 27)}
+      dateTo={new Date(2020, 0, 27)}
+    />
+  </View>
+);
 
 export default App;
 
