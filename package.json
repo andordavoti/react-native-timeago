@@ -1,6 +1,6 @@
 {
   "name": "rn-timeago",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "A simple React Native timeago Component.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -24,7 +24,7 @@
     "typescript": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "prepare": "bob build",
-    "release": "release-it",
+    "release": "dotenv release-it",
     "example": "yarn --cwd example",
     "pods": "cd example && pod-install --quiet",
     "bootstrap": "yarn example && yarn && yarn pods"
@@ -50,6 +50,7 @@
     "@types/react": "^16.9.19",
     "@types/react-native": "0.62.13",
     "commitlint": "^8.3.5",
+    "dotenv-cli": "^4.0.0",
     "eslint": "^7.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",

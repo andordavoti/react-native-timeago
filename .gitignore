@@ -42,6 +42,7 @@ example/ios/Pods
 
 # node.js
 #
+.env
 node_modules/
 npm-debug.log
 yarn-debug.log
