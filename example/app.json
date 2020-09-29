@@ -1,0 +1,22 @@
+{
+  "name": "rn-timeago-example",
+  "displayName": "RnTimeago Example",
+  "expo": {
+    "name": "rn-timeago-example",
+    "slug": "rn-timeago-example",
+    "description": "Example app for rn-timeago",
+    "privacy": "public",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
