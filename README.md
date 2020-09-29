@@ -1,22 +1,44 @@
 # @andordavoti/react-native-timeago
 
-A simple React Native timeago Component.
+A simple React Native timeago Component using [date-fns](https://date-fns.org/).
 
 ## Installation
 
+Run:
+
 ```sh
-npm install @andordavoti/react-native-timeago
+npm i @andordavoti/react-native-timeago
+```
+
+Import the module:
+
+```js
+import Timeago from '@andordavoti/react-native-timeago';
 ```
 
 ## Usage
 
+Use it as a regular React Native Text component and pass it a Date. Other optional props can be passed which are specified bellow.
+
 ```js
-import RnTimeago from '@andordavoti/react-native-timeago';
+import React from 'react';
+import Timeago from '@andordavoti/react-native-timeago';
 
-// ...
+const App: React.FC = () => {
+  return <Timeago dateTo={new Date(1536484369695)} />;
+};
 
-const result = await RnTimeago.multiply(3, 7);
+export default App;
 ```
+
+## Props
+
+| Name     |   Type    | Required | Description                                                                |
+| :------- | :-------: | :------: | :------------------------------------------------------------------------- |
+| dateTo   |  `Date`   |   yes    | date you want the component to count To (uses the current date as a start) |
+| dateFrom |  `Date`   | optional | Overwrite the current Date                                                 |
+| hideAgo  | `boolean` | optional | Hides the "ago" text                                                       |
+| style    |  `bool`   | optional | Style passed to the Text component                                         |
 
 ## Contributing
 
