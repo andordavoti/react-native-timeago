@@ -37,10 +37,10 @@ export default App;
 
 | Name     |   Type    | Required | Description                                                                |
 | :------- | :-------: | :------: | :------------------------------------------------------------------------- |
-| dateTo   |  `Date`   |   yes    | date you want the component to count To (uses the current date as a start) |
-| dateFrom |  `Date`   | optional | Overwrite the current Date                                                 |
-| hideAgo  | `boolean` | optional | Hides the "ago" text                                                       |
-| style    |  `bool`   | optional | Style passed to the Text component                                         |
+| dateTo   |  `Date`   |   yes    | date you want the component to count to (uses the current date as a start).|
+| dateFrom |  `Date`   | optional | Overwrite the current Date as a starting point.                            |
+| hideAgo  | `boolean` | optional | Hides the "ago" text.                                                      |
+| style    |  `bool`   | optional | Style passed to the Text component.                                        |
 
 ## Contributing
 
