@@ -9,7 +9,7 @@ interface Props {
   style?: StyleProp<TextStyle>;
 }
 
-const RNTimeAgo: React.FC<Props> = ({
+const TimeAgo: React.FC<Props> = ({
   dateTo,
   dateFrom = new Date(),
   hideAgo = false,
@@ -24,4 +24,4 @@ const RNTimeAgo: React.FC<Props> = ({
   );
 };
 
-export default RNTimeAgo;
+export default TimeAgo;
