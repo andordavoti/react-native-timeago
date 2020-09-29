@@ -1,11 +1,26 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { StyleProp, Text, TextStyle } from 'react-native';
+import moment from 'moment';
 
-const RNTimeAgo = () => {
+interface Props {
+  dateTo: Date;
+  dateFrom?: Date;
+  style?: StyleProp<TextStyle>;
+  hideAgo?: boolean;
+}
+
+const RNTimeAgo: React.FC<Props> = ({
+  dateTo,
+  dateFrom,
+  style,
+  hideAgo = false,
+}) => {
   return (
-    <View>
-      <Text>Time Ago</Text>
-    </View>
+    <Text {...{ style }}>
+      {dateFrom
+        ? moment(dateTo).from(dateFrom, hideAgo)
+        : moment(dateTo).fromNow(hideAgo)}
+    </Text>
   );
 };
 
