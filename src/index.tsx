@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleProp, Text, TextStyle } from 'react-native';
 import moment from 'moment';
+import formatDistance from 'date-fns/formatDistance';
 
 interface Props {
   dateTo: Date;
@@ -17,9 +18,9 @@ const RNTimeAgo: React.FC<Props> = ({
 }) => {
   return (
     <Text {...{ style }}>
-      {dateFrom
-        ? moment(dateTo).from(dateFrom, hideAgo)
-        : moment(dateTo).fromNow(hideAgo)}
+      {formatDistance(dateTo, dateFrom || new Date(), {
+        addSuffix: !hideAgo,
+      })}
     </Text>
   );
 };

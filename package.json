@@ -136,6 +136,6 @@
     ]
   },
   "dependencies": {
-    "moment": "^2.29.0"
+    "date-fns": "^2.16.1"
   }
 }
