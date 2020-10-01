@@ -20,7 +20,7 @@ import TimeAgo from '@andordavoti/react-native-timeago';
 
 ## Usage
 
-Use it as a regular React Native Text component and pass it a Date. Other optional props can be passed which are specified bellow.
+Use it as a regular React Native Text component and pass it a Date. Other optional props can be passed which are specified bellow. There is also an Expo app example in the repo under the example folder.
 
 ```js
 import React from 'react';
