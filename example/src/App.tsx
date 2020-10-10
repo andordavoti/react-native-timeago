@@ -16,6 +16,11 @@ const App: React.FC = () => (
       dateFrom={new Date(2007, 0, 27)}
       dateTo={new Date(2020, 0, 27)}
     />
+    <TimeAgo
+      updateInterval={1000}
+      style={styles.text}
+      dateTo={new Date(1602352698126)}
+    />
   </View>
 );
 
