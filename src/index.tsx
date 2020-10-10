@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { StyleProp, Text, TextStyle } from 'react-native';
 import formatDistance from 'date-fns/formatDistance';
 
 interface Props {
   dateTo: Date;
+  updateInterval?: number;
   dateFrom?: Date;
   hideAgo?: boolean;
   style?: StyleProp<TextStyle>;
@@ -11,13 +12,23 @@ interface Props {
 
 const TimeAgo: React.FC<Props> = ({
   dateTo,
-  dateFrom = new Date(),
+  dateFrom,
+  updateInterval = 60000,
   hideAgo = false,
   style,
 }) => {
+  const [currentDate, setCurrentDate] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!dateFrom) setCurrentDate(new Date());
+    }, updateInterval);
+    return () => clearInterval(interval);
+  }, [updateInterval, dateFrom]);
+
   return (
     <Text {...{ style }}>
-      {formatDistance(dateTo, dateFrom, {
+      {formatDistance(dateTo, dateFrom || currentDate, {
         addSuffix: !hideAgo,
       })}
     </Text>
