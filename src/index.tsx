@@ -30,8 +30,6 @@ const TimeAgo: React.FC<Props> = ({
     return () => clearInterval(interval);
   }, [dateFrom, updateInterval]);
 
-  console.log(hideAgo);
-
   return (
     <Text {...{ style }}>
       {formatDistance(dateTo, dateFrom || currentDate, {
