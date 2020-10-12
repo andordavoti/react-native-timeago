@@ -20,12 +20,8 @@ const TimeAgo: React.FC<Props> = ({
   const [currentDate, setCurrentDate] = useState(new Date());
 
   useEffect(() => {
-    setTimeout(() => setCurrentDate(new Date()), 100);
-  }, []);
-
-  useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentDate(new Date());
+      if (!dateFrom) setCurrentDate(new Date());
     }, updateInterval);
     return () => clearInterval(interval);
   }, [dateFrom, updateInterval]);
