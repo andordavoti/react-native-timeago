@@ -20,11 +20,17 @@ const TimeAgo: React.FC<Props> = ({
   const [currentDate, setCurrentDate] = useState(new Date());
 
   useEffect(() => {
+    setTimeout(() => setCurrentDate(new Date()), 100);
+  }, []);
+
+  useEffect(() => {
     const interval = setInterval(() => {
-      if (!dateFrom) setCurrentDate(new Date());
+      setCurrentDate(new Date());
     }, updateInterval);
     return () => clearInterval(interval);
-  }, [updateInterval, dateFrom]);
+  }, [dateFrom, updateInterval]);
+
+  console.log(hideAgo);
 
   return (
     <Text {...{ style }}>
