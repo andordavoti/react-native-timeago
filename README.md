@@ -1,8 +1,10 @@
 # @andordavoti/react-native-timeago
 
-A simple React Native timeago Component using [date-fns](https://date-fns.org/).
+A simple auto-updating React Native timeago Component using [date-fns](https://date-fns.org/).
 
-Supports iOS, Android and Web.
+Inspired by: [react-native-timeago](https://www.npmjs.com/package/react-native-timeago) (replaced momentjs with date-fns due to momentjs now being legacy, and switched from class-based to functional).
+
+Supports iOS, Android and Web. Written in Typescript.
 
 ## Installation
 
@@ -35,11 +37,12 @@ export default App;
 
 ## Props
 
-| Name     |   Type    | Required | Description                                                                |
-| :------- | :-------: | :------: | :------------------------------------------------------------------------- |
-| dateTo   |  `Date`   |   yes    | date you want the component to count to (uses the current date as a start).|
-| dateFrom |  `Date`   | optional | Overwrite the current Date as a starting point.                            |
-| hideAgo  | `boolean` | optional | Hides the "ago" text.                                                      |
+| Name           |   Type    | Required | Description                                                                |
+| :------------- | :-------: | :------: | :------------------------------------------------------------------------- |
+| dateTo         |  `Date`   |   yes    | date you want the component to count to (uses the current date as a start).|
+| dateFrom       |  `Date`   | optional | Overwrite the current Date as a starting point.                            |
+| hideAgo        | `boolean` | optional | Hides the "ago" text.                                                      |
+| updateInterval | `number`  | optional | How often the current date should update (only when using the "dateFrom" prop). Default is 60000 milliseconds                                                      |
 | style    |  `bool`   | optional | Style passed to the Text component.                                        |
 
 ## Contributing
